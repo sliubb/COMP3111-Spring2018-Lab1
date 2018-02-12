@@ -9,5 +9,16 @@ public class Lab1Activity {
 		for(int i = 0; i < 10;i++)
 			sum = sum + arr[i];
 		System.out.println(String.format("Sum of the number is %d", sum));
+		int min = 1;
+		int max = 0;
+		for(int i = 0; i < 10; i++) {
+			if(arr[i] > max)
+				max = arr[i];
+			if(arr[i] < min)
+				min = arr[i];
+		}
+		System.out.print(String.format("Min = %d", min));
+		System.out.println(String.format("; Max = %d", max));
+		
 	}
 }
